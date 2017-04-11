@@ -10461,7 +10461,8 @@ local.assetsDict['/assets.testReport.template.html'] = '\
 <h4>\n\
     {{testPlatformNumber}}. {{name htmlSafe}}<br>\n\
     {{#if screenCaptureImg}}\n\
-    <a href="{{screenCaptureImg}}"><img src="{{screenCaptureImg}}"></a><br>\n\
+    <a href="{{screenCaptureImg}}"><img src="{{screenCaptureImg encodeURIComponent}}"></a>\n\
+    <br>\n\
     {{/if screenCaptureImg}}\n\
     <span>time-elapsed</span>- {{timeElapsed}} ms<br>\n\
     <span>tests failed</span>- {{testsFailed}}<br>\n\
